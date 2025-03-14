@@ -30,7 +30,7 @@ const idProduct = new ObjectId('67d36ed4b91b61ca5f5aee78')
 deteleProduct(idProduct)
 
 
-*/
+
 
 const app = express();
 const port = 3000;
@@ -50,3 +50,6 @@ app.get('/produtos', async (req, res) => {
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
 });
+*/
+
+readProduct();
