@@ -1,0 +1,25 @@
+{
+  "name": "servidor",
+  "version": "1.0.0",
+  "description": "craian ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseDesen/servidor.git"
+  },
+  "author": "Jose Desen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoseDesen/servidor/issues"
+  },
+  "homepage": "https://github.com/JoseDesen/servidor#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongodb": "^6.14.2",
+    "mongoose": "^8.12.1",
+    "prompt-sync": "^4.2.0"
+  }
+}
