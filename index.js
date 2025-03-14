@@ -39,6 +39,7 @@ app.get('/produtos', async (req, res) => {
   try {
     const collection = await connection();
     const produtos = await collection.find().toArray();
+    res.json(produtos)
     disconnection();
   } catch (error) {
     console.error(error);
