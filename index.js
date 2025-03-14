@@ -34,13 +34,12 @@ deteleProduct(idProduct)
 
 const app = express();
 const port = 3000;
-produtos;
 // Rota para obter produtos
 app.get('/produtos', async (req, res) => {
   try {
     const collection = await connection();
-     produtos = await collection.find().toArray();
-    res.json(produtos[0].marca);
+    const produtos = await collection.find().toArray();
+    res.json(produtos);
     disconnection();
   } catch (error) {
     console.error(error);
@@ -51,4 +50,3 @@ app.get('/produtos', async (req, res) => {
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
 });
-console.log(produtos[0].marca)
